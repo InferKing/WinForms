@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(131, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 20);
+            this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Вход в систему";
             // 
@@ -52,8 +52,9 @@ namespace WindowsFormsApp1
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(101, 90);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 27);
+            this.textBox1.Size = new System.Drawing.Size(198, 23);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -61,7 +62,7 @@ namespace WindowsFormsApp1
             this.textBox2.Location = new System.Drawing.Point(101, 134);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(198, 27);
+            this.textBox2.Size = new System.Drawing.Size(198, 23);
             this.textBox2.TabIndex = 2;
             // 
             // button1
@@ -81,9 +82,10 @@ namespace WindowsFormsApp1
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(23, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.Size = new System.Drawing.Size(47, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Логин";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -91,7 +93,7 @@ namespace WindowsFormsApp1
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(23, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 20);
+            this.label3.Size = new System.Drawing.Size(57, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Пароль";
             // 

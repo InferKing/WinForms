@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
+            this.label2.Size = new System.Drawing.Size(117, 17);
             this.label2.TabIndex = 14;
             this.label2.Text = "Вопрос номер: 2";
             // 
@@ -53,7 +53,7 @@ namespace WindowsFormsApp1
             this.label1.Location = new System.Drawing.Point(12, 46);
             this.label1.MaximumSize = new System.Drawing.Size(350, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 13;
             this.label1.Text = "2 * 3 = ?";
             // 
@@ -73,7 +73,7 @@ namespace WindowsFormsApp1
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(96, 109);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 27);
+            this.textBox1.Size = new System.Drawing.Size(210, 23);
             this.textBox1.TabIndex = 15;
             // 
             // label3
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(12, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 16;
             this.label3.Text = "Ответ:";
             // 
@@ -98,6 +98,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button1);
             this.Name = "Form5";
             this.Text = "Тест ONline";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

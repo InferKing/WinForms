@@ -21,5 +21,12 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

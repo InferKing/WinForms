@@ -21,5 +21,15 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

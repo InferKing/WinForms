@@ -24,5 +24,11 @@ namespace WindowsFormsApp1
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }

@@ -19,10 +19,31 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hide();
-            Form8 f = new Form8();
-            f.StartPosition = FormStartPosition.CenterScreen;
-            f.Show();
+            string login = "admin";
+            string password = "123456";
+            if ((textBox1.Text == login && textBox2.Text == password))
+            {
+                Hide();
+                Form8 f = new Form8();
+                f.StartPosition = FormStartPosition.CenterScreen;
+                f.Show();
+            }
+            else MessageBox.Show("Указан неверный логин или пароль");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
