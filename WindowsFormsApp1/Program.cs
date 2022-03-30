@@ -21,7 +21,6 @@ namespace WindowsFormsApp1
             Application.SetCompatibleTextRenderingDefault(false);
             Form2 f = new Form2();
             f.StartPosition = FormStartPosition.CenterScreen;
-            Data d = new Data();
             Application.Run(f);
         }
 
@@ -45,41 +44,99 @@ namespace WindowsFormsApp1
 
     class Data
     {
-        private string filename = "/data.dat";
+        private string filename = "data.dat";
+        private string filepath = $"{Application.StartupPath}/data.dat";
+        public string JsonString;
+        public void WriteJson(List<DataForJson> list)
+        {
+            JsonString = JsonConvert.SerializeObject(list);
+            SaveData();
+        }
 
-        public static string jsonString;
+        public void RemoveData()
+        {
+            if (File.Exists(filepath))
+            {
+                try
+                {
+                    File.Delete(filepath);
+                }
+                catch (IOException e)
+                {
+                    MessageBox.Show($"Ошибка! Файл {filename} используется сторонней программой.");
+                }
+            }
+        }
+
         public void SaveData()
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.StartupPath + filename, FileMode.Create);
-            bf.Serialize(file, jsonString);
+            FileStream file = File.Open(filepath, FileMode.Create);
+            bf.Serialize(file, JsonString);
             file.Close();
         }
 
         public void LoadData()
         {
             BinaryFormatter bf = new BinaryFormatter();
-            if (File.Exists(Application.StartupPath + filename))
+            if (File.Exists(filepath))
             {
-                FileStream file = File.Open(Application.StartupPath + filename, FileMode.Open);
-                jsonString = (string)bf.Deserialize(file);
+                FileStream file = File.Open(filepath, FileMode.Open);
+                JsonString = (string)bf.Deserialize(file);
                 file.Close();
             }
             else
             {
-                FileStream file = File.Open(Application.StartupPath + filename, FileMode.CreateNew);
+                FileStream file = File.Open(filepath, FileMode.CreateNew);
                 file.Close();
             }
         }
     }
-
     class Question
     {
         public string TypeOfQuestion { get; set; }
         public string Answer { get; set; }
+    }
 
+    class DataForJson
+    {
+        private List<Person> listPerson;
+        private List<Question> listQuestion;
+        public DataForJson(List<Person> l1, List<Question> l2)
+        {
+            listPerson = l1;
+            listQuestion = l2;
+        }
     }
 
 
 
 }
+
+/*
+Как выглядят данные json 
+{
+    "people":
+    [
+        {
+            "Name":"Oleg",
+            "Surname":"Vyachin"
+        },
+        {
+            "Name":"Matvey",
+            "Surname":"Demidov"
+        }
+    ],
+    "Question":
+    [
+        {
+            "Name":"Oleg",
+            "Surname":"Vyachin"
+        },
+        {
+            "Name":"Matvey",
+            "Surname":"Demidov"
+        }
+    ]
+}
+*/

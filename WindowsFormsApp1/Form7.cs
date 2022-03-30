@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
 
 namespace WindowsFormsApp1
 {
@@ -20,6 +23,11 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void GetInfo()
+        {
+
         }
     }
 }
