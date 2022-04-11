@@ -45,14 +45,35 @@ namespace WindowsFormsApp1
 
     class Data
     {
-        private string filename = "/data.dat";
+        private readonly string filename = "/data.dat";
+        private string filepath = $"{Application.StartupPath}/data.dat";
+        public string JsonString;
 
-        public static string jsonString;
+        public void WriteJson(List<DataForJson> list)
+        {
+            JsonString = JsonConvert.SerializeObject(list);
+            SaveData();
+        }
+
+        public void RemoveData()
+        {
+            if (File.Exists(filepath))
+            {
+                try
+                {
+                    File.Delete(filepath);
+                }
+                catch (IOException e)
+                {
+                    MessageBox.Show($"Ошибка! Файл {filename} используется сторонней программой.");
+                }
+            }
+        }
         public void SaveData()
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.StartupPath + filename, FileMode.Create);
-            bf.Serialize(file, jsonString);
+            bf.Serialize(file, JsonString);
             file.Close();
         }
 
@@ -62,7 +83,7 @@ namespace WindowsFormsApp1
             if (File.Exists(Application.StartupPath + filename))
             {
                 FileStream file = File.Open(Application.StartupPath + filename, FileMode.Open);
-                jsonString = (string)bf.Deserialize(file);
+                JsonString = (string)bf.Deserialize(file);
                 file.Close();
             }
             else
