@@ -77,9 +77,12 @@ namespace WindowsFormsApp1
     {
         public string TypeOfQuestion { get; set; }
         public string Answer { get; set; }
-
     }
 
-
+    class DataForJson
+    {
+        public List<Question> questions;
+        public List<Person> persons;
+    }
 
 }
