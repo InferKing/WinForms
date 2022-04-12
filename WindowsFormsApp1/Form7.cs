@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
         {
             Data d = new Data();
             d.LoadData();
-            Person p = new Person(WasUsed.names[0], WasUsed.names[1], WasUsed.names[2],WasUsed.score.ToString());
+            Person p = new Person(WasUsed.names[1], WasUsed.names[0], WasUsed.names[2],WasUsed.score.ToString());
             d.EditData.persons.Add(p);
             d.WriteJson();
             label2.Text += $"{WasUsed.score.ToString()}/20";

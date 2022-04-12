@@ -19,10 +19,19 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hide();
-            Form8 f = new Form8();
-            f.StartPosition = FormStartPosition.CenterScreen;
-            f.Show();
+            if (textBox1.Text == "admin" && textBox2.Text == "12345")
+            {
+                Hide();
+                Form8 f = new Form8();
+                f.StartPosition = FormStartPosition.CenterScreen;
+                f.Show();
+            }
+            else
+            {
+                MessageBox.Show("Проверьте правильность ввода логина и пароля.");
+                textBox1.Text = "";
+                textBox2.Text = "";
+            }
         }
     }
 }

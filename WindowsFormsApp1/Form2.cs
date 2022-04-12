@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace WindowsFormsApp1
 {
@@ -32,6 +33,16 @@ namespace WindowsFormsApp1
             Form3 f3 = new Form3();
             f3.StartPosition = FormStartPosition.CenterScreen;
             f3.Show();
+        }
+
+        private void испытуемыйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start($"{Application.StartupPath}/polz.txt");
+        }
+
+        private void проверяющийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start($"{Application.StartupPath}/prov.txt");
         }
     }
 }

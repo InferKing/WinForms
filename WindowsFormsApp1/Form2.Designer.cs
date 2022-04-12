@@ -96,12 +96,14 @@ namespace WindowsFormsApp1
             this.испытуемыйToolStripMenuItem.Name = "испытуемыйToolStripMenuItem";
             this.испытуемыйToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.испытуемыйToolStripMenuItem.Text = "Испытуемый";
+            this.испытуемыйToolStripMenuItem.Click += new System.EventHandler(this.испытуемыйToolStripMenuItem_Click);
             // 
             // проверяющийToolStripMenuItem
             // 
             this.проверяющийToolStripMenuItem.Name = "проверяющийToolStripMenuItem";
             this.проверяющийToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.проверяющийToolStripMenuItem.Text = "Проверяющий";
+            this.проверяющийToolStripMenuItem.Click += new System.EventHandler(this.проверяющийToolStripMenuItem_Click);
             // 
             // Form2
             // 
