@@ -24,6 +24,17 @@ namespace WindowsFormsApp1
             Application.Run(f);
         }
 
+       public static List<string> Cutter(string s)
+        {
+            List<string> list = new List<string>();
+            var k = s.Split(';');
+            foreach (var k2 in k)
+            {
+                list.Add(k2);
+            }
+            return list;
+        }
+
     }
 
     class Person
@@ -44,13 +55,21 @@ namespace WindowsFormsApp1
 
     class Data
     {
-        private readonly string filename = "/data.dat";
-        private string filepath = $"{Application.StartupPath}/data.dat";
+        private readonly string filename = "/data.json";
+        private string filepath = $"{Application.StartupPath}/data.json";
         public string JsonString;
+        public DataForJson EditData;
 
-        public void WriteJson(List<DataForJson> list)
+        public void WriteJson(DataForJson list)
         {
+            EditData = list;
             JsonString = JsonConvert.SerializeObject(list);
+            SaveData();
+        }
+
+        public void WriteJson()
+        {
+            JsonString = JsonConvert.SerializeObject(EditData);
             SaveData();
         }
 
@@ -83,6 +102,7 @@ namespace WindowsFormsApp1
             {
                 FileStream file = File.Open(Application.StartupPath + filename, FileMode.Open);
                 JsonString = (string)bf.Deserialize(file);
+                EditData = JsonConvert.DeserializeObject<DataForJson>(JsonString);
                 file.Close();
             }
             else
@@ -96,7 +116,16 @@ namespace WindowsFormsApp1
     class Question
     {
         public string TypeOfQuestion { get; set; }
+        public string QuestionText { get; set; }
         public string Answer { get; set; }
+        public string WrongAnswer { get; set; }
+        public Question(string t, string q, string a, string w)
+        {
+            TypeOfQuestion = t;
+            QuestionText = q;
+            Answer = a;
+            WrongAnswer = w;
+        }
     }
 
     class DataForJson

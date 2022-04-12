@@ -22,7 +22,6 @@ C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\bin\Debug\Newtonsoft.J
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
-C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4.resources
@@ -36,3 +35,4 @@ C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsForms
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Infer\Documents\GitHub\WinForms\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WasUsed.resources

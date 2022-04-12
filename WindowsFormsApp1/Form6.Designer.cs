@@ -44,15 +44,15 @@ namespace WindowsFormsApp1
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
+            this.label2.Size = new System.Drawing.Size(137, 20);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Вопрос номер: 3";
+            this.label2.Text = "Вопрос номер: ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 46);
+            this.label1.Location = new System.Drawing.Point(12, 38);
             this.label1.MaximumSize = new System.Drawing.Size(350, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 20);
@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(122, 211);
+            this.button1.Location = new System.Drawing.Point(122, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 29);
             this.button1.TabIndex = 12;
@@ -74,7 +74,7 @@ namespace WindowsFormsApp1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.Location = new System.Drawing.Point(25, 81);
+            this.checkBox1.Location = new System.Drawing.Point(16, 93);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(69, 24);
             this.checkBox1.TabIndex = 15;
@@ -85,7 +85,7 @@ namespace WindowsFormsApp1
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox2.Location = new System.Drawing.Point(25, 111);
+            this.checkBox2.Location = new System.Drawing.Point(16, 123);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(69, 24);
             this.checkBox2.TabIndex = 16;
@@ -96,7 +96,7 @@ namespace WindowsFormsApp1
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox3.Location = new System.Drawing.Point(25, 141);
+            this.checkBox3.Location = new System.Drawing.Point(16, 153);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(69, 24);
             this.checkBox3.TabIndex = 17;
@@ -107,7 +107,7 @@ namespace WindowsFormsApp1
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox4.Location = new System.Drawing.Point(25, 171);
+            this.checkBox4.Location = new System.Drawing.Point(16, 183);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(87, 24);
             this.checkBox4.TabIndex = 18;
@@ -128,6 +128,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button1);
             this.Name = "Form6";
             this.Text = "Тест ONline";
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

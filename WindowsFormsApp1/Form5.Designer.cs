@@ -42,9 +42,9 @@ namespace WindowsFormsApp1
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
+            this.label2.Size = new System.Drawing.Size(137, 20);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Вопрос номер: 2";
+            this.label2.Text = "Вопрос номер: ";
             // 
             // label1
             // 
@@ -98,6 +98,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button1);
             this.Name = "Form5";
             this.Text = "Тест ONline";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

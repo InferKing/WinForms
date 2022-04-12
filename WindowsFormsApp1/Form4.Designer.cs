@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(25, 81);
+            this.radioButton1.Location = new System.Drawing.Point(16, 92);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(39, 24);
             this.radioButton1.TabIndex = 1;
@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(25, 111);
+            this.radioButton2.Location = new System.Drawing.Point(16, 122);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(39, 24);
             this.radioButton2.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(25, 141);
+            this.radioButton3.Location = new System.Drawing.Point(16, 152);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(39, 24);
             this.radioButton3.TabIndex = 3;
@@ -78,7 +78,7 @@ namespace WindowsFormsApp1
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton4.Location = new System.Drawing.Point(25, 171);
+            this.radioButton4.Location = new System.Drawing.Point(16, 182);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(39, 24);
             this.radioButton4.TabIndex = 4;
@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(122, 211);
+            this.button1.Location = new System.Drawing.Point(121, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 29);
             this.button1.TabIndex = 5;
@@ -101,7 +101,7 @@ namespace WindowsFormsApp1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 46);
+            this.label1.Location = new System.Drawing.Point(12, 38);
             this.label1.MaximumSize = new System.Drawing.Size(350, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 20);
@@ -114,9 +114,9 @@ namespace WindowsFormsApp1
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
+            this.label2.Size = new System.Drawing.Size(137, 20);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Вопрос номер: 1";
+            this.label2.Text = "Вопрос номер: ";
             // 
             // Form4
             // 

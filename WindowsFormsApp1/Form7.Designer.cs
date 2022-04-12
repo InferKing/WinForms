@@ -51,9 +51,9 @@ namespace WindowsFormsApp1
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(107, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 20);
+            this.label2.Size = new System.Drawing.Size(122, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Ваши баллы: 10/20";
+            this.label2.Text = "Ваши баллы: ";
             // 
             // label3
             // 
@@ -61,9 +61,9 @@ namespace WindowsFormsApp1
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(145, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 20);
+            this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Оценка: 3";
+            this.label3.Text = "Оценка: ";
             // 
             // button1
             // 
@@ -87,6 +87,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "Form7";
             this.Text = "Form7";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
