@@ -21,7 +21,6 @@ namespace WindowsFormsApp1
             Application.SetCompatibleTextRenderingDefault(false);
             Form2 f = new Form2();
             f.StartPosition = FormStartPosition.CenterScreen;
-            Data d = new Data();
             Application.Run(f);
         }
 
